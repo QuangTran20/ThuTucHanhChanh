@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KetHonActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarKetHon"
+        app:title="Thủ tục đăng ký kết hôn"
+        app:titleTextColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:src="@drawable/giayto_dangkykethon"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+    <Button
+        android:onClick="cmdDangKyKetHon"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button_green"
+        android:text="Đăng ký kết hôn"
+        android:textColor="@color/yello"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

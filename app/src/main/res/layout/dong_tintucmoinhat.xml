@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/carviewTinMoi"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/imgtinmoi"
+                android:layout_gravity="top|right"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/imgHinhTinTuc"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="#0D2652"
+                        android:id="@+id/txtTieuDe"
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:textColor="#009688"
+                        android:textSize="16sp"
+                        android:id="@+id/txtNgayDang"
+                        android:layout_margin="5dp"
+                        android:text="ngày đăng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:orientation="vertical"
+    android:background="#5BCF5F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarracthai"
+        android:background="@color/colorPrimary"
+        app:title="Rác thải"
+        app:titleTextColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="PHÂN LOẠI CHẤT THẢI RẮN TẠI NGUỐN"
+            android:textColor="#ff0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#ff0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text="Các loại chất thải:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/btnHuuCo"
+            android:onClick="cmdHuuCo"
+            android:textColor="@color/yello"
+            android:textSize="18sp"
+
+            android:text="Hữu cơ"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="cmdVoCo"
+            android:id="@+id/btnVoCo"
+            android:textColor="@color/yello"
+            android:textSize="18sp"
+            android:text="Vô cơ"
+            android:background="@drawable/custom_button"
+
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="cmdConLai"
+            android:id="@+id/btnConLai"
+
+            android:textSize="18sp"
+            android:text="Còn lại"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/yello"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnPhanLoai"
+        android:background="@drawable/custom_button_green"
+        android:textColor="@color/yello"
+        android:text="Video Clip"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:id="@+id/tvKetQua"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+</LinearLayout>

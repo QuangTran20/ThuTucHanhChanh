@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activity.KhaiSinhActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarKhaiSinh"
+        app:title="Thủ tục khai sinh"
+        app:titleTextColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/giayto_dangkykhaisinh"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+    <Button
+        android:onClick="cmdDangKyKhaiSinh"
+        android:background="@drawable/custom_button_green"
+        android:textColor="@color/yello"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="Đăng ký khai sinh"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
